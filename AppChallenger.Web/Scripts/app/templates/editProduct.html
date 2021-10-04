@@ -1,0 +1,37 @@
+﻿<h2>Update</h2>
+<form class="form-horizontal" name="frmEditProduct" ng-submit="editProduct(product)" novalidate>
+    <h4>Update product information</h4>
+    <hr />
+
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Name</label>
+        <div class="col-lg-10">
+            <input type="text" class="form-control" name="name" ng-model="product.Name" ng-maxlength="32" required />            
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Sku</label>
+        <div class="col-lg-10">
+            <input type="text" class="form-control" name="Sku" ng-model="product.Sku" ng-maxlength="50" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Description</label>
+        <div class="col-lg-10">
+            <textarea rows="4" cols="6" class="form-control" ng-model="product.Description">
+            </textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Price</label>
+        <div class="col-lg-10">
+            <input type="number" class="form-control" name="price" ng-model="product.Price" ng-maxlength="50" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-10">
+            <input type="submit" class="btn btn-success" value="Update" />
+            <a href="#/" class="btn btn-default">Cancel</a>
+        </div>
+    </div>
+</form>
